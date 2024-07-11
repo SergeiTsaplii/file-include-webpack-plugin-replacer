@@ -22,12 +22,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FreelancerLifeStyle/file-include-webpack-plugin-replace.git"
+    "url": "git+https://github.com/SergeiTsaplii/file-include-webpack-plugin-replacer.git"
   },
   "bugs": {
-    "url": "https://github.com/FreelancerLifeStyle/file-include-webpack-plugin/issues"
+    "url": "https://github.com/SergeiTsaplii/file-include-webpack-plugin-replacer/issues"
   },
-  "homepage": "https://github.com/FreelancerLifeStyle/file-include-webpack-plugin#readme",
+  "homepage": "https://github.com/SergeiTsaplii/file-include-webpack-plugin-replacer#readme",
   "devDependencies": {
     "webpack-watch-files-plugin": "^1.2.1"
   }
