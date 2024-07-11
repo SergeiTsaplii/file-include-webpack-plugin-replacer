@@ -1,6 +1,6 @@
 {
   "name": "file-include-webpack-plugin-replacer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -30,5 +30,8 @@
   "homepage": "https://github.com/SergeiTsaplii/file-include-webpack-plugin-replacer#readme",
   "devDependencies": {
     "webpack-watch-files-plugin": "^1.2.1"
+  },
+  "dependencies": {
+    "js-beautify": "^1.15.1"
   }
 }
