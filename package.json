@@ -1,0 +1,34 @@
+{
+  "name": "file-include-webpack-plugin-replacer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "fileinclude",
+    "plugin",
+    "partials"
+  ],
+  "author": "Vishal Sharma (Fix SergeiTsaplii)",
+  "license": "MIT",
+  "description": "replace @@include partials with content (replace fix)",
+  "engines": {
+    "node": ">=6.11.5"
+  },
+  "peerDependencies": {
+    "webpack": "^4.0.0 || ^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreelancerLifeStyle/file-include-webpack-plugin-replace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FreelancerLifeStyle/file-include-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/FreelancerLifeStyle/file-include-webpack-plugin#readme",
+  "devDependencies": {
+    "webpack-watch-files-plugin": "^1.2.1"
+  }
+}
