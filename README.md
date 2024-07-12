@@ -47,26 +47,6 @@ module.exports = {
 ```
 <br/>
 
-#### How to pass html beautifier options
-
-This plugin uses [js-beautify](https://www.npmjs.com/package/js-beautify) for html beautification.
-
-Use the config `htmlBeautifyOptions` to pass custom beautifier options. Refer to the package `js-beautify` to know more about the possible options.
-
-Example config -
-```javascript
-module.exports = {
-  plugins: [
-    new FileIncludeWebpackPlugin(
-      {
-        source: './src/templates',
-        htmlBeautifyOptions: {
-          'indent_size': 2
-        }
-      },
-    )
-  ]
-}
 ```
 
 
