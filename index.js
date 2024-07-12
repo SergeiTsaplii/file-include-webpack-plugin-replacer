@@ -1,6 +1,5 @@
 const path = require('path')
 const fs = require('fs')
-const beautifyHtml = require('js-beautify').html;
 const utils = require('./utils')
 
 class FileIncludeWebpackPlugin {
@@ -10,10 +9,6 @@ class FileIncludeWebpackPlugin {
 		this.source = config.source
 		this.replace = config.replace
 		this.destination = config.destination
-		this.htmlBeautifyOptions = {
-			...utils.getHtmlBeautifyOpts(),
-			...(config.htmlBeautifyOptions || {}),
-		}
 
 		// handlers
 		this.process = this.process.bind(this)
@@ -65,12 +60,7 @@ class FileIncludeWebpackPlugin {
 			const sourcePath = path.join(this.context, file)
 			const destinationPath = this.destination ? path.join(this.destination, file) : file
 			const content = this.processFile(compilation, this.context, sourcePath)
-			const cleanHtml = beautifyHtml(content, this.htmlBeautifyOptions);
-
-			compilation.assets[destinationPath] = {
-				source: () => cleanHtml,
-				size: () => cleanHtml.length,
-			}
+			
 		}
 
 		callback()

@@ -52,23 +52,9 @@ function getRequiredFiles(context, path) {
   return requiredFiles
 }
 
-function getHtmlBeautifyOpts() {
-  return {
-    html: {
-      indent_size: 2,
-      js: {
-        indent_size: 2,
-      },
-      css: {
-        indent_size: 2,
-      },
-    },
-  }
-}
 
 module.exports = {
   logger,
   getRequiredFiles,
-  substituteArgs,
-  getHtmlBeautifyOpts
+  substituteArgs
 }
